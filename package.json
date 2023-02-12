@@ -36,6 +36,7 @@
   "author": "wibus-wee <wibus@qq.com>",
   "license": "AGPLv3",
   "dependencies": {
+    "ofetch": "^1.0.0",
     "unbuild": "^1.1.1"
   }
 }

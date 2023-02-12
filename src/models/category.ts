@@ -14,4 +14,4 @@ export class CategoryModel extends BaseModel {
   description?: string;
 }
 
-export class PartialPageModel extends PartialType(CategoryModel) {}
+export class PartialCategoryModel extends PartialType(CategoryModel) {}

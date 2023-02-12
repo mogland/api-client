@@ -1,5 +1,5 @@
 
-import { BeAnObject } from "src/types/typegoose";
+import { BeAnObject } from "../types/typegoose";
 import { ImageModel } from "./image";
 
 /**

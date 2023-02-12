@@ -9,6 +9,4 @@ export class PostModel extends WriteBaseModel {
   copyright?: boolean;
   count?: CountMixed;
   tags?: string[];
-  created?: Date;
-  modified?: Date;
 }

@@ -10,7 +10,7 @@ export interface IAdapterOptions {
 
 export type IAdapterResponse<T> = Promise<BeAnObject & { data: T }>;
 
-export type IAdapter<P> = Readonly<{
+export type IAdapter<P = any> = Readonly<{
   default: P;
 
   get: <T = unknown>(

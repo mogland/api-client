@@ -1,5 +1,5 @@
 import { ofetch } from "ofetch";
-import { IAdapter, IAdapterOptions, IAdapterResponse } from ".";
+import { IAdapter } from "../interfaces/adapter";
 
 const $ = ofetch.create({});
 

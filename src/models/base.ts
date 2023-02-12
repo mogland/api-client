@@ -1,12 +1,13 @@
-import { BeAnObject } from "@type/typegoose";
-import { ImageModel } from "./image.model";
+
+import { BeAnObject } from "src/types/typegoose";
+import { ImageModel } from "./image";
 
 /**
  * 基础模型
  * 
- * @property created 创建时间
- * @property id 文章id
- * @property protectedKeys 需要保护的字段
+ * created 创建时间
+ * id 文章id
+ * protectedKeys 需要保护的字段
  */
 export class BaseModel {
   created?: Date;
@@ -19,9 +20,9 @@ export class BaseModel {
 /**
  * 评论索引模型
  * 
- * @property commentsIndex 评论索引
- * @property allowComment 是否允许评论
- * @property protectedKeys 需要保护的字段
+ * commentsIndex 评论索引
+ * allowComment 是否允许评论
+ * protectedKeys 需要保护的字段
  */
 export abstract class BaseCommentIndexModel extends BaseModel {
   commentsIndex?: number;
@@ -34,15 +35,15 @@ export abstract class BaseCommentIndexModel extends BaseModel {
 /**
  * 写作基础模型
  * 
- * @property title 标题
- * @property text 内容
- * @property images 图片
- * @property modified 修改时间
- * @property fields 自定义字段
- * @property password 密码
- * @property hide 是否隐藏
- * @property rss 是否推送到rss
- * @property protectedKeys 需要保护的字段
+ * title 标题
+ * text 内容
+ * images 图片
+ * modified 修改时间
+ * fields 自定义字段
+ * password 密码
+ * hide 是否隐藏
+ * rss 是否推送到rss
+ * protectedKeys 需要保护的字段
  */
 export class WriteBaseModel extends BaseCommentIndexModel {
   title!: string;
@@ -61,8 +62,8 @@ export class WriteBaseModel extends BaseCommentIndexModel {
 /**
  * 文章x量基础模型
  * 
- * @property read 阅读量
- * @property like 点赞量
+ * read 阅读量
+ * like 点赞量
  */
 export class CountMixed {
   read?: number;

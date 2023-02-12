@@ -11,10 +11,5 @@
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
-    "paths": {
-      "@adapters/*": ["src/adapters/*"],
-      "@models/*": ["src/models/*"],
-      "@type/*": ["src/types/*"],
-    }
   },
 }
